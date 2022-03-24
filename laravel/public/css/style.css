@@ -14,3 +14,13 @@
 .full-nav {
     height: 100px;
 }
+
+.menu-text {
+    font-size: 20px !important;
+    color: #fff;
+    font-weight: 700;
+}
+
+.menu-button {
+    margin-left: 100px;
+}
