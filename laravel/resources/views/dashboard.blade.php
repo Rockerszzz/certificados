@@ -1,8 +1,17 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Gerenciamento de Certificados SSL') }}
-        </h2>
+    <div class="barra-inf">
+        <div class="barra-inf-esq">
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                {{ __('Gerenciamento de Certificados SSL') }}
+            </h2>
+        </div>
+        <div class="barra-inf-dir">
+            <form action="/dashbord" method="GET">
+                <input type="text" id="search" class="form-control" placeholder="Buscar Domínio">
+            </form>
+        </div>
+    </div>
     </x-slot>
 
     <div class="py-12">
