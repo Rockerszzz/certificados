@@ -1,7 +1,9 @@
-<head>
-    <link rel="stylesheet" href="">
-</head>
-<div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100" style="background: #007aff;">
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+</html>
+<div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100" id="auth">
     <div>
         {{ $logo }}
     </div>
