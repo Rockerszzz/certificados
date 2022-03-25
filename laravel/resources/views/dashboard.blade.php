@@ -6,7 +6,6 @@
                 {{ __('Gerenciamento de Certificados SSL') }}
             </h2>
         </div>
-        {{-- {{ dump($dominios ?? '') }} --}}
         <div class="barra-inf-dir">
             <form action="/dashboard" method="GET">
                 <input type="text" id="search" name="search" class="form-control" placeholder="Buscar Domínio">
@@ -19,15 +18,14 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 
-                @foreach ($dominios as $dominio)
+                @foreach ($dominios ?? '' as $dominio)
                     <p> ID:&nbsp;{{ $dominio->id }} -
                         Domínio:&nbsp;<a href="#">{{ $dominio->dominio }}</a> -
                         SSL:&nbsp;{{ $dominio->ssl }} -
                         Tipo:&nbsp;{{ $dominio->tipo }} -
                         Renovação Automática:&nbsp;{{ $dominio->automatico }} -
                         Período de Renovação:&nbsp;{{ $dominio->periodo }} -
-                        Expira em:&nbsp;{{ $dominio->created_at }} 
-                        
+                        Expira em:&nbsp;{{ date('d/m/Y', strtotime($dominio->created_at)) }} 
                     </p>
                 @endforeach
 

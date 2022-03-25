@@ -19,12 +19,28 @@ class DominioController extends Controller
             ])->get();
 
         } else {
-            $dominios = Dominio::orderBy('created_at', 'DESC')->get();
+            $dominios = Dominio::orderBy('created_at', 'ASC')->get();
         }
-
-        
-
         return view('dashboard',['dominios' => $dominios, 'search' => $search]);
+
+    }
+    public function create() {
+        return view('dominios.create');
+    }
+    public function store(Request $request) {
+
+        $dominio = new Dominio;
+
+        $dominio->dominio = $request->dominio;
+        $dominio->servidor = $request->servidor;
+        $dominio->ssl = $request->ssl;
+        $dominio->tipo = $request->tipo;
+        $dominio->automatico = $request->automatico;
+        $dominio->periodo = $request->periodo;
+        $dominio->created_at = $request->expiracao;
+        $dominio->save();
+
+        return redirect('/dashboard')->with('msg', 'Dominio inserido com sucesso!');
 
     }
 }
