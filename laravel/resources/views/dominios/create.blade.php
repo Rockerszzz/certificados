@@ -2,6 +2,7 @@
     <!-- Última versão CSS compilada e minificada -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
+<x-app-layout>
 <div id="domain-create-container" class="col-md6 offset-md-3">
     <h1>Inserir Domínio</h1>
     <form action="/dashboard/dominios/store" method="POST">
@@ -43,3 +44,4 @@
         <input type="submit" class="btn btm-primary" value="Criar Evento">
     </form>
 </div>
+</x-app-layout>

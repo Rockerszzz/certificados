@@ -47,3 +47,8 @@
 .form-control {
     border-radius: 20px;
 }
+
+.footer {
+    width: 100% !important;
+    text-align: center !important;
+}
