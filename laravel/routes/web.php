@@ -19,9 +19,9 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
-Route::get('/dashboard/dominios/create', [DominioController::class, 'create']);
+Route::get('/dashboard/create', [DominioController::class, 'create'])->name('create');;
 
-Route::post('/dashboard/dominios/store', [DominioController::class, 'store']);
+Route::post('/dashboard/store', [DominioController::class, 'store']);
 
 Route::get('/dashboard', [DominioController::class, 'index'])->name('dashboard');
 

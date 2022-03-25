@@ -1,7 +1,6 @@
 @extends('layouts.main')
-@section('title', 'Inserir Domínio')
+@section('title', 'Área Local')
 @section('content')
-
 <div id="domain-create-container" class="col-md6 offset-md-3">
     <h1>Inserir Domínio</h1>
     <form action="/dashboard/dominios/store" method="POST">

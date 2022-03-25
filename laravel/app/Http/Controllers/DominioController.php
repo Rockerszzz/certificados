@@ -25,7 +25,7 @@ class DominioController extends Controller
 
     }
     public function create() {
-        return view('dominios.create');
+        return view('create');
     }
     public function store(Request $request) {
 
