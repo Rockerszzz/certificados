@@ -10,9 +10,21 @@ class DominioController extends Controller
 {
     public function index() {
 
-        $dominios = Dominio::all();
+        $search = request('search');
 
-        return view('dashboard',['dominios' => $dominios]);
+        if($search) {
+
+            $dominios = Dominio::where([
+                ['dominio', 'like', '%'.$search.'%']
+            ])->get();
+
+        } else {
+            $dominios = Dominio::orderBy('created_at', 'DESC')->get();
+        }
+
+        
+
+        return view('dashboard',['dominios' => $dominios, 'search' => $search]);
 
     }
 }
