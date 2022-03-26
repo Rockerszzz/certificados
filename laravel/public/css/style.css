@@ -138,3 +138,15 @@
     border-radius: 20px;
     height: 40px;
 }
+
+.listagem-dominios p {
+    border: solid 1px #007aff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.listagem-dominios p:hover {
+    border: solid 1px #007aff;
+    background: #007aff;
+    color: #fff;
+}
