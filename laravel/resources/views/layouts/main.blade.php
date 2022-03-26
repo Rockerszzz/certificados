@@ -21,7 +21,7 @@
                         </h2>
                     </div>
                     <div class="barra-inf-dir">
-                        <form action="/dashboard" method="GET">
+                        <form class="form-busca" action="/dashboard" method="GET">
                             <input type="text" id="search" name="search" class="form-control" placeholder="Buscar Domínio">
                         </form>
                     </div>

@@ -9,16 +9,16 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="menu-logo">
-                    <a href="{{ route('dashboard') }}"><img src="img/logo.png" alt=""></a>
+                    <a href="{{ route('dashboard') }}"><img src="/img/logo.png" alt=""></a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="menu-button">
                     <x-jet-nav-link class="menu-text" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('INÍCIO') }}
+                        {{ __('DOMÍNIOS') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link class="menu-text" href="{{ route('create') }}" :active="request()->routeIs('create')">
-                        {{ __('INSERIR DOMÍNIO') }}
+                        {{ __('INSERIR') }}
                     </x-jet-nav-link>
                 </div>
                 

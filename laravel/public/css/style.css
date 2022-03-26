@@ -8,7 +8,9 @@
 }
 
 .menu-logo {
-    width: 350px;
+    width: 300px;
+    display: block;
+    margin: auto;;
 }
 
 .full-nav {
@@ -19,10 +21,12 @@
     font-size: 20px !important;
     color: #fff;
     font-weight: 700;
+    margin-top: 76px;
 }
 
 .menu-button {
-    margin-left: 100px;
+    margin-left: 200px;
+    word-spacing: 10px;
 }
 
 .barra-inf {
@@ -31,17 +35,26 @@
 }
 
 .barra-inf-esq {
-    width: 50%;
-    margin-left: 30px;
+    width: 50%; 
+    margin: auto;
 }
 
 .barra-inf-dir {
     width: 50%;
-    text-align: right;
+    margin: auto;
+    text-align: -webkit-right;
 }
 
 .busca {
     border-radius: 10px;
+}
+
+.form-busca {
+    width: 300px;
+}
+
+.form-create {
+    width: 760px;
 }
 
 .form-control {
@@ -51,4 +64,77 @@
 .footer {
     width: 100% !important;
     text-align: center !important;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.tela-login {
+    height: 100vh;
+}
+
+.linha-1 {
+    display: inline-flex;
+    width: 100%;
+}
+
+.input-dominio {
+    width: 50%;
+}
+
+.input-servidor {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.linha-2 {
+    display: inline-flex;
+    width: 100%;
+}
+
+.input-ssl {
+    width: 50%;
+}
+
+.input-tipo {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.linha-3 {
+    display: inline-flex;
+    width: 100%;
+}
+
+.input-automatico {
+    width: 50%;
+}
+
+.input-periodo {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.linha-4 {
+    display: inline-flex;
+    width: 100%;
+    margin: auto;
+}
+
+.input-expiracao {
+    width: 50%;
+}
+
+.btm-primary {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 25px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    height: 40px;
 }
