@@ -16,9 +16,14 @@
                 <x-slot name="header">
                 <div class="barra-inf">
                     <div class="barra-inf-esq">
-                        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                        <p>
                             {{ __('Gerenciamento de Certificados SSL') }}
-                        </h2>
+                        </p>
+                    </div>
+                    <div class="barra-inf-meio">
+                        <p>
+                            <a target="_blank" href="https://letsencrypt.org/pt-br/"><img style="width: 50px" src="/img/escudo.png" alt=""></a>
+                        </p>
                     </div>
                     <div class="barra-inf-dir">
                         <form class="form-busca" action="/dashboard" method="GET">

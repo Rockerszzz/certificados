@@ -13,34 +13,73 @@
     margin: auto;;
 }
 
+.menu-logo:hover {
+    cursor: pointer;
+    animation: rotate 2s forwards;
+    filter: invert(1);
+}
+
+.logo-login:hover {
+    cursor: pointer;
+    animation: rotate 2s forwards;
+    filter: invert(1);
+}
+
 .full-nav {
     height: 100px;
 }
 
 .menu-text {
-    font-size: 20px !important;
-    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 15px;
+    color: #007aff;
+    background-color: #ffffff;
     font-weight: 700;
-    margin-top: 76px;
+}
+
+.menu-text:hover {
+    background-color: #ffffff;
+    color: #007aff;
+    padding: 75px 10px;
 }
 
 .menu-button {
-    margin-left: 200px;
+    margin-left: 395px;
     word-spacing: 10px;
 }
-
 .barra-inf {
     display: inline-flex;
     width: 100%;
 }
 
 .barra-inf-esq {
-    width: 50%; 
+    margin: auto;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.barra-inf-meio {
     margin: auto;
 }
 
+.barra-inf-meio:hover {
+    cursor: pointer;
+    animation: rotate 2s forwards;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
 .barra-inf-dir {
-    width: 50%;
+    width: 60%;
     margin: auto;
     text-align: -webkit-right;
 }
@@ -143,10 +182,13 @@
     border: solid 1px #007aff;
     border-radius: 20px;
     padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 6px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .listagem-dominios p:hover {
     border: solid 1px #007aff;
     background: #007aff;
     color: #fff;
+    cursor: pointer;
 }
