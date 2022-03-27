@@ -14,33 +14,47 @@
                     </div>
                     <div class="form-group input-servidor">
                         <label for="servidor">Servidor:</label>
-                        <input type="text" class="form-control" id="servidor" name="servidor" placeholder="Insira o Servidor">
+                        <select name="servidor" id="servidor" class="form-control">
+                            <option value="KingHost">KingHost</option>
+                            <option value="DreamHost">DreamHost</option>
+                            <option value="Cloudez">Cloudez</option>
+                            <option value="Locaweb">Locaweb</option>
+                            <option value="Externo">Externo</option>
+                        </select>
                     </div>
                 </div>
                 <div class="linha-2">
                     <div class="form-group input-ssl">
-                        <label for="ssl">SSL:</label>
+                        <label for="ssl">SSL Ativo:</label>
                         <select name="ssl" id="ssl" class="form-control">
-                            <option value="1">Sim</option>
-                            <option value="0">Não</option>
+                            <option value="sim">Sim</option>
+                            <option value="não">Não</option>
                         </select>
                     </div>
                     <div class="form-group input-tipo">
                         <label for="tipo">Tipo:</label>
-                        <input type="text" class="form-control" id="tipo" name="tipo" placeholder="Insira o Tipo">
+                        <select name="tipo" id="tipo" class="form-control">
+                            <option value="Nenhum">Nenhum</option>
+                            <option value="Let's Encrypt">Let's Encrypt</option>
+                            <option value="Alpha SSL/WildCard">Alpha SSL/WildCard</option>
+                        </select>
                     </div>
                 </div>
                 <div class="linha-3">
                     <div class="form-group input-automatico">
                         <label for="automatico">Renovação Automática:</label>
                         <select name="automatico" id="automatico" class="form-control">
-                            <option value="1">Sim</option>
-                            <option value="0">Não</option>
+                            <option value="sim">Sim</option>
+                            <option value="não">Não</option>
                         </select>
                     </div>
                     <div class="form-group input-periodo">
                         <label for="periodo">Período de Renovação:</label>
-                        <input type="text" class="form-control" id="periodo" name="periodo" placeholder="Insira o Período">
+                        <select name="periodo" id="periodo" class="form-control">
+                            <option value="Nenhum">Nenhum</option>
+                            <option value="Trimestral">Trimestral</option>
+                            <option value="Anual">Anual</option>
+                        </select>
                     </div>
                 </div>
                 <div class="linha-4">

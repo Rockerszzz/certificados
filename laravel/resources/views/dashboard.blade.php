@@ -2,6 +2,9 @@
 @section('title', 'Área Local - Certificados SSL')
 @section('content')
 
+<div>
+    
+</div>
 <div class="py-12">
     <div class="">
         <div class="">
@@ -30,7 +33,7 @@
                 </div>
                 <div>
                     <p>Expira em:</p>
-                    <p>{{ date('d/m/Y', strtotime($dominio->created_at)) }}</p>
+                    <p>{{ date('d/m/Y', strtotime($dominio->expiracao)) }}</p>
                 </div>
             </div>
             @endforeach
@@ -38,6 +41,6 @@
     </div>
 </div>
 <div class="pagination">
-    {{$dominios->links()}}
+    <p>{{$dominios->links()}}</p>
 </div>
 @endsection

@@ -16,11 +16,12 @@ class CreateDominiosTable extends Migration
         Schema::create('dominios', function (Blueprint $table) {
             $table->id();
             $table->text('dominio');
-            $table->string('servidor');
-            $table->boolean('ssl');
+            $table->text('servidor');
+            $table->string('ssl');
             $table->text('tipo');
-            $table->boolean('automatico');
-            $table->string('periodo');
+            $table->string('automatico');
+            $table->text('periodo');
+            $table->dateTime('expiracao');
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ class CreateDominiosTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('dominios');
     }
 }

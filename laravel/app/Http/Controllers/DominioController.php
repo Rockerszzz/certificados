@@ -12,7 +12,7 @@ class DominioController extends Controller
 {
     public function index() {
 
-        $dominios = Dominio::orderBy('created_at', 'ASC')->paginate(5);
+        $dominios = Dominio::orderBy('expiracao', 'ASC')->paginate(5);
         
         return view('dashboard',['dominios' => $dominios]);
 
@@ -30,10 +30,10 @@ class DominioController extends Controller
         $dominio->tipo = $request->tipo;
         $dominio->automatico = $request->automatico;
         $dominio->periodo = $request->periodo;
-        $dominio->created_at = $request->expiracao;
+        $dominio->expiracao = $request->expiracao;
         $dominio->save();
 
-        return redirect('/dashboard')->with('msg', 'Dominio inserido com sucesso!');
+        return redirect('/dashboard')->with('msg', 'Domínio inserido com sucesso!');
 
     }
 
