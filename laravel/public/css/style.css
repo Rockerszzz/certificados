@@ -40,6 +40,7 @@ omme#auth {
     background-color: #ffffff;
     font-weight: 700;
     padding: 20px;
+    letter-spacing: 1px;
 }
 
 .menu-text:hover {
@@ -130,6 +131,7 @@ omme#auth {
 
 .tela-login {
     height: 100vh;
+    background: #007aff;
 }
 
 .inserir-dominio label {
