@@ -23,7 +23,11 @@ Route::get('/dashboard/create', [DominioController::class, 'create'])->name('cre
 
 Route::post('/dashboard/store', [DominioController::class, 'store']);
 
+Route::get('/search', [DominioController::class, 'search']);
+
 Route::get('/dashboard', [DominioController::class, 'index'])->name('dashboard');
+
+
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');

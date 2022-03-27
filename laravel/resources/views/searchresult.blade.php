@@ -37,7 +37,4 @@
         </div>
     </div>
 </div>
-<div class="pagination">
-    {{$dominios->links()}}
-</div>
 @endsection

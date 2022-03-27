@@ -4,24 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Pagination\Paginator;
+
 use App\Models\Dominio;
 
 class DominioController extends Controller
 {
     public function index() {
 
-        $search = request('search');
-
-        if($search) {
-
-            $dominios = Dominio::where([
-                ['dominio', 'like', '%'.$search.'%']
-            ])->get();
-
-        } else {
-            $dominios = Dominio::orderBy('created_at', 'ASC')->get();
-        }
-        return view('dashboard',['dominios' => $dominios, 'search' => $search]);
+        $dominios = Dominio::orderBy('created_at', 'ASC')->paginate(5);
+        
+        return view('dashboard',['dominios' => $dominios]);
 
     }
     public function create() {
@@ -43,4 +36,16 @@ class DominioController extends Controller
         return redirect('/dashboard')->with('msg', 'Dominio inserido com sucesso!');
 
     }
+
+    public function search(){
+
+        $search = request('search');
+
+            $dominios = Dominio::where([
+                ['dominio', 'like', '%'.$search.'%']
+            ])->get();
+
+            return view('searchresult',['dominios' => $dominios]);
+        }
+    
 }

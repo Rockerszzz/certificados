@@ -1,19 +1,19 @@
 @extends('layouts.main')
-@section('title', 'Área Local')
+@section('title', 'Inserir Domínio')
 @section('content')
 <div class="py-12">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 form-create">
-        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-            <h1>Inserir Domínio</h1>
+        <div class="inserir-dominio">
+            <h1>INSERIR DOMÍNIO</h1>
             <form action="/dashboard/store" method="POST">
                 @csrf
                 <div class="linha-1">
                     <div class="form-group input-dominio input-dominio">
-                        <label for="dominio">Domínio</label>
+                        <label for="dominio">Domínio:</label>
                         <input type="text" class="form-control" id="dominio" name="dominio" placeholder="Insira o Domínio">
                     </div>
                     <div class="form-group input-servidor">
-                        <label for="servidor">Servidor</label>
+                        <label for="servidor">Servidor:</label>
                         <input type="text" class="form-control" id="servidor" name="servidor" placeholder="Insira o Servidor">
                     </div>
                 </div>
@@ -39,13 +39,13 @@
                         </select>
                     </div>
                     <div class="form-group input-periodo">
-                        <label for="periodo">Período de Renovação</label>
+                        <label for="periodo">Período de Renovação:</label>
                         <input type="text" class="form-control" id="periodo" name="periodo" placeholder="Insira o Período">
                     </div>
                 </div>
                 <div class="linha-4">
                     <div class="form-group input-expiracao">
-                        <label for="created_at">Expira em:</label>
+                        <label for="created_at">Data de Expiração:</label>
                         <input type="date" class="form-control" id="expiracao" name="expiracao" placeholder="Insira a Data">
                     </div>
                     <input type="submit" class="btn btm-primary" value="Inserir Domínio">
@@ -54,6 +54,4 @@
         </div>
     </div>
 </div>
-
-
 @endsection
