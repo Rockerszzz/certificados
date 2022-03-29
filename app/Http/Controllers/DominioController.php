@@ -73,5 +73,13 @@ class DominioController extends Controller
         return view('edit', ['dominio' => $dominio]);
 
     }
+
+    public function update(Request $request) {
+    
+        Dominio::findOrFail($request->id)->update($request->all());
+
+        return redirect('/dashboard')->with('msg', 'Domínio editado com sucesso!');
+    
+    }
     
 }

@@ -5,7 +5,7 @@
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 form-create">
         <div class="inserir-dominio">
             <h1>EDITAR DOMÍNIO</h1>
-            <form action="/dashboard/edit/update/{{ $dominio->id }}" method="POST">
+            <form action="/dashboard/update/{{ $dominio->id }}" method="POST">
                 @csrf
                 @method('PUT')
                 <div class="linha-1">
@@ -61,7 +61,7 @@
                 <div class="linha-4">
                     <div class="form-group input-expiracao">
                         <label for="expiracao">Data de Expiração:</label>
-                        <input type="date" class="form-control" id="expiracao" name="expiracao">
+                        <input type="date" class="form-control" id="expiracao" name="expiracao" required>
                     </div>
                     <input type="submit" class="btn btm-primary" value="Editar Domínio">
                 </div>

@@ -27,6 +27,8 @@ Route::delete('/dashboard/{id}', [DominioController::class, 'destroy']);
 
 Route::get('/dashboard/edit/{id}', [DominioController::class, 'edit']);
 
+Route::put('/dashboard/update/{id}', [DominioController::class, 'update']);
+
 Route::get('/search', [DominioController::class, 'search']);
 
 Route::get('/dashboard', [DominioController::class, 'index'])->name('dashboard');
