@@ -19,19 +19,19 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
-Route::get('/dashboard/create', [DominioController::class, 'create'])->name('create');
+Route::get('/dashboard/create', [DominioController::class, 'create'])->name('create')->middleware('auth');
 
 Route::post('/dashboard/store', [DominioController::class, 'store']);
 
-Route::delete('/dashboard/{id}', [DominioController::class, 'destroy']);
+Route::delete('/dashboard/{id}', [DominioController::class, 'destroy'])->middleware('auth');
 
-Route::get('/dashboard/edit/{id}', [DominioController::class, 'edit']);
+Route::get('/dashboard/edit/{id}', [DominioController::class, 'edit'])->middleware('auth');
 
-Route::put('/dashboard/update/{id}', [DominioController::class, 'update']);
+Route::put('/dashboard/update/{id}', [DominioController::class, 'update'])->middleware('auth');
 
 Route::get('/search', [DominioController::class, 'search']);
 
-Route::get('/dashboard', [DominioController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [DominioController::class, 'index'])->name('dashboard')->middleware('auth');
 
 Route::get('/expirando', [DominioController::class, 'expira']);
 
