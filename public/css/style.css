@@ -1,0 +1,265 @@
+#auth {
+    background: #007aff;
+}
+
+.area-nav {
+    background: #007aff;
+    height: 100px;
+}
+
+.menu-logo {
+    width: 300px;
+    display: block;
+    margin: auto;;
+}
+
+.menu-logo:hover {
+    cursor: pointer;
+}
+
+.logo-login {
+    margin-top: auto;
+}
+
+.logo-login:hover {
+    cursor: pointer;
+    animation: rotate 2s forwards;
+    filter: invert(1);
+}
+
+.full-nav {
+    height: 100px;
+}
+
+.menu-text {
+    border-radius: 0 0 8px 8px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 15px;
+    color: #007aff;
+    background-color: #ffffff;
+    font-weight: 700;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+.menu-text:hover {
+    background-color: #ffffff;
+    color: #007aff;
+    padding: 75px 10px;
+}
+
+.menu-button {
+    margin-left: 395px;
+    word-spacing: 10px;
+}
+.barra-inf {
+    display: inline-flex;
+    width: 100%;
+}
+
+.barra-inf-esq {
+    margin: auto;
+    font-size: 24px;
+    font-weight: 800;
+    color: #007aff;
+}
+
+.barra-inf-meio {
+    margin: auto;
+}
+
+.barra-inf-meio:hover {
+    cursor: pointer;
+    animation: rotate 2s forwards;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.barra-inf-dir {
+    width: 60%;
+    margin: auto;
+    text-align: -webkit-right;
+}
+
+.msg {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb ;
+    width: 100%;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 10px;
+}
+
+.busca {
+    border-radius: 10px;
+}
+
+.form-busca {
+    width: 300px;
+}
+
+.form-create {
+    width: 760px;
+}
+
+.form-control {
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    box-shadow: 5px 6px 6px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    color: gray;
+}
+
+.dominio-btn {
+    display: flex;
+    height: min-content;
+    margin: auto;
+}
+
+.btn-danger {
+    background-color: #dc3545 !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer {
+    width: 100% !important;
+    text-align: center !important;
+    bottom: 0px;
+    left: 0px;
+    margin-top: auto;
+    background-color: #007aff;
+    color: #fff;
+    padding: 20px;
+}
+
+.tela-login {
+    height: 100vh;
+    background: #007aff;
+}
+
+.inserir-dominio label {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.inserir-dominio h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.linha-1 {
+    display: inline-flex;
+    width: 100%;
+}
+
+.input-dominio {
+    width: 50%;
+}
+
+.input-servidor {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.linha-2 {
+    display: inline-flex;
+    width: 100%;
+}
+
+.input-ssl {
+    width: 50%;
+}
+
+.input-tipo {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.linha-3 {
+    display: inline-flex;
+    width: 100%;
+}
+
+.input-automatico {
+    width: 50%;
+}
+
+.input-periodo {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.linha-4 {
+    display: inline-flex;
+    width: 100%;
+    margin: auto;
+}
+
+.input-expiracao {
+    width: 50%;
+}
+
+.btm-primary {
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 35px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 20px;
+    height: 41px;
+    box-shadow: 5px 6px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btm-primary:hover {
+    background-color: lightgreen;
+}
+
+.listagem-dominios {
+    display: inline-flex;
+    border: solid 1px #007aff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    box-shadow: 5px 6px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.listagem-dominios:hover {
+    border: solid 1px #007aff;
+    background: #007aff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.listagem-dominios p {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+/* .text-sm.text-gray-700.leading-5 {
+    display: none !important;
+} */
+
+.pagination {
+    width: 100% !important;
+}
+
+.items-center {
+    margin-left: auto;
+    margin-right: auto;
+}
